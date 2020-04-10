@@ -1,0 +1,401 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Wed Feb 19 21:35:22 2020
+# Process ID: 158546
+# Current directory: /home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1
+# Command line: vivado -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
+# Log file: /home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/system_wrapper.vds
+# Journal file: /home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/frizik/MOPEVM/fpga/Xilinx/Vivado/2016.3/data/ip'.
+Command: synth_design -top system_wrapper -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 158573 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1133.156 ; gain = 252.043 ; free physical = 218 ; free virtual = 8122
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_wrapper' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:23]
+INFO: [Synth 8-3491] module 'system' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1360' bound to instance 'system_i' of component 'system' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'system' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1373]
+INFO: [Synth 8-3491] module 'system_axi_gpio_0_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'system_axi_gpio_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1625]
+INFO: [Synth 8-638] synthesizing module 'system_axi_gpio_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_axi_gpio_0_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_axi_uartlite_0_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'system_axi_uartlite_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1648]
+INFO: [Synth 8-638] synthesizing module 'system_axi_uartlite_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'system_clk_wiz_1_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'system_clk_wiz_1_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1673]
+INFO: [Synth 8-638] synthesizing module 'system_clk_wiz_1_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_clk_wiz_1_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'system_mdm_1_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'system_mdm_1_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1679]
+INFO: [Synth 8-638] synthesizing module 'system_mdm_1_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_microblaze_0_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'system_microblaze_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1692]
+INFO: [Synth 8-638] synthesizing module 'system_microblaze_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'system_microblaze_0_axi_periph_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:945]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1RZ0IW6' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1RZ0IW6' (1#1) [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_K87I2F' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_K87I2F' (2#1) [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:158]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1LZPV07' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:815]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1LZPV07' (3#1) [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:815]
+INFO: [Synth 8-3491] module 'system_xbar_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'system_xbar_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'system_xbar_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'system_microblaze_0_axi_periph_0' (4#1) [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:945]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_OGE0N8' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:242]
+INFO: [Synth 8-3491] module 'system_dlmb_bram_if_cntlr_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'system_dlmb_bram_if_cntlr_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:452]
+INFO: [Synth 8-638] synthesizing module 'system_dlmb_bram_if_cntlr_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_dlmb_v10_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'system_dlmb_v10_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:506]
+INFO: [Synth 8-638] synthesizing module 'system_dlmb_v10_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'system_ilmb_bram_if_cntlr_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'system_ilmb_bram_if_cntlr_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:534]
+INFO: [Synth 8-638] synthesizing module 'system_ilmb_bram_if_cntlr_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'system_ilmb_v10_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'system_ilmb_v10_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:588]
+INFO: [Synth 8-638] synthesizing module 'system_ilmb_v10_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'system_lmb_bram_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'system_lmb_bram_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:616]
+INFO: [Synth 8-638] synthesizing module 'system_lmb_bram_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_lmb_bram_0_stub.vhdl:25]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_OGE0N8' (5#1) [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:242]
+INFO: [Synth 8-3491] module 'system_rst_clk_wiz_1_100M_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'system_rst_clk_wiz_1_100M_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1835]
+INFO: [Synth 8-638] synthesizing module 'system_rst_clk_wiz_1_100M_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'system_xlconstant_0_0' declared at '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'system_xlconstant_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1848]
+INFO: [Synth 8-638] synthesizing module 'system_xlconstant_0_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/realtime/system_xlconstant_0_0_stub.vhdl:12]
+INFO: [Synth 8-256] done synthesizing module 'system' (6#1) [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1373]
+INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (7#1) [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system_wrapper.vhd:23]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1LZPV07 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_K87I2F has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_1RZ0IW6 has unconnected port S_ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.625 ; gain = 294.512 ; free physical = 234 ; free virtual = 8112
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1175.625 ; gain = 294.512 ; free physical = 234 ; free virtual = 8111
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_axi_gpio_0_0' instantiated as 'system_i/axi_gpio_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1625]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_axi_uartlite_0_0' instantiated as 'system_i/axi_uartlite_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1648]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_clk_wiz_1_0' instantiated as 'system_i/clk_wiz_1' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1673]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_dlmb_bram_if_cntlr_0' instantiated as 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:452]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_dlmb_v10_0' instantiated as 'system_i/microblaze_0_local_memory/dlmb_v10' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:506]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_ilmb_bram_if_cntlr_0' instantiated as 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:534]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_ilmb_v10_0' instantiated as 'system_i/microblaze_0_local_memory/ilmb_v10' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:588]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_lmb_bram_0' instantiated as 'system_i/microblaze_0_local_memory/lmb_bram' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:616]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_mdm_1_0' instantiated as 'system_i/mdm_1' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1679]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_microblaze_0_0' instantiated as 'system_i/microblaze_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1692]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_rst_clk_wiz_1_100M_0' instantiated as 'system_i/rst_clk_wiz_1_100M' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1835]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_xbar_0' instantiated as 'system_i/microblaze_0_axi_periph/xbar' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1295]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'system_xlconstant_0_0' instantiated as 'system_i/xlconstant_0' [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/sources_1/bd/system/hdl/system.vhd:1848]
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp/system_microblaze_0_0_in_context.xdc] for cell 'system_i/microblaze_0'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp/system_microblaze_0_0_in_context.xdc] for cell 'system_i/microblaze_0'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_2/system_ilmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_2/system_ilmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_3/system_ilmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_3/system_ilmb_v10_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_4/system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_4/system_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_5/system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_5/system_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_6/system_lmb_bram_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_6/system_lmb_bram_0_in_context.xdc] for cell 'system_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_7/system_mdm_1_0_in_context.xdc] for cell 'system_i/mdm_1'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_7/system_mdm_1_0_in_context.xdc] for cell 'system_i/mdm_1'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_8/system_clk_wiz_1_0_in_context.xdc] for cell 'system_i/clk_wiz_1'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_8/system_clk_wiz_1_0_in_context.xdc] for cell 'system_i/clk_wiz_1'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_9/system_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'system_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_9/system_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'system_i/rst_clk_wiz_1_100M'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_10/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/axi_gpio_0'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_10/system_axi_gpio_0_0_in_context.xdc] for cell 'system_i/axi_gpio_0'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_11/system_axi_uartlite_0_0_in_context.xdc] for cell 'system_i/axi_uartlite_0'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_11/system_axi_uartlite_0_0_in_context.xdc] for cell 'system_i/axi_uartlite_0'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_12/system_xbar_0_in_context.xdc] for cell 'system_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_12/system_xbar_0_in_context.xdc] for cell 'system_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_13/system_xlconstant_0_0_in_context.xdc] for cell 'system_i/xlconstant_0'
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_13/system_xlconstant_0_0_in_context.xdc] for cell 'system_i/xlconstant_0'
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/constrs_1/new/constr.xdc]
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/constrs_1/new/constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/constrs_1/new/constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1440.266 ; gain = 0.000 ; free physical = 280 ; free virtual = 8026
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'system_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 279 ; free virtual = 8024
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 279 ; free virtual = 8023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in1. (constraint file  /home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_8/system_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in1. (constraint file  /home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/.Xil/Vivado-158546-frizik/dcp_8/system_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for system_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_gpio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/clk_wiz_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/mdm_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for system_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 279 ; free virtual = 8024
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 279 ; free virtual = 8024
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design system_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 279 ; free virtual = 8023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/BRAM_Clk_A' to pin 'system_i/microblaze_0_local_memory/dlmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'system_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/mdm_1/Dbg_Clk_0' to pin 'system_i/mdm_1/bbstub_Dbg_Clk_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/mdm_1/Dbg_Update_0' to pin 'system_i/mdm_1/bbstub_Dbg_Update_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'system_i/clk_wiz_1/clk_out1' to pin 'system_i/clk_wiz_1/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 232 ; free virtual = 7970
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 232 ; free virtual = 7970
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 227 ; free virtual = 7962
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 228 ; free virtual = 7963
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 228 ; free virtual = 7963
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 228 ; free virtual = 7963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 228 ; free virtual = 7963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 228 ; free virtual = 7963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 228 ; free virtual = 7963
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |system_axi_gpio_0_0         |         1|
+|2     |system_axi_uartlite_0_0     |         1|
+|3     |system_clk_wiz_1_0          |         1|
+|4     |system_mdm_1_0              |         1|
+|5     |system_microblaze_0_0       |         1|
+|6     |system_xbar_0               |         1|
+|7     |system_rst_clk_wiz_1_100M_0 |         1|
+|8     |system_xlconstant_0_0       |         1|
+|9     |system_dlmb_bram_if_cntlr_0 |         1|
+|10    |system_dlmb_v10_0           |         1|
+|11    |system_ilmb_bram_if_cntlr_0 |         1|
+|12    |system_ilmb_v10_0           |         1|
+|13    |system_lmb_bram_0           |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |system_axi_gpio_0_0_bbox         |     1|
+|2     |system_axi_uartlite_0_0_bbox     |     1|
+|3     |system_clk_wiz_1_0_bbox          |     1|
+|4     |system_dlmb_bram_if_cntlr_0_bbox |     1|
+|5     |system_dlmb_v10_0_bbox           |     1|
+|6     |system_ilmb_bram_if_cntlr_0_bbox |     1|
+|7     |system_ilmb_v10_0_bbox           |     1|
+|8     |system_lmb_bram_0_bbox           |     1|
+|9     |system_mdm_1_0_bbox              |     1|
+|10    |system_microblaze_0_0_bbox       |     1|
+|11    |system_rst_clk_wiz_1_100M_0_bbox |     1|
+|12    |system_xbar_0_bbox               |     1|
+|13    |system_xlconstant_0_0_bbox       |     1|
+|14    |IBUF                             |     1|
+|15    |OBUF                             |     2|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+------------------------------+-------------------------------------+------+
+|      |Instance                      |Module                               |Cells |
++------+------------------------------+-------------------------------------+------+
+|1     |top                           |                                     |  1088|
+|2     |  system_i                    |system                               |  1085|
+|3     |    microblaze_0_axi_periph   |system_microblaze_0_axi_periph_0     |   263|
+|4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_OGE0N8 |   494|
++------+------------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.266 ; gain = 559.152 ; free physical = 228 ; free virtual = 7963
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1440.266 ; gain = 107.469 ; free physical = 226 ; free virtual = 7961
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1440.273 ; gain = 559.160 ; free physical = 226 ; free virtual = 7961
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1440.273 ; gain = 392.699 ; free physical = 228 ; free virtual = 7959
+INFO: [Common 17-1381] The checkpoint '/home/frizik/MOPEVM/fpga/Blink/Blink.runs/synth_1/system_wrapper.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.07 . Memory (MB): peak = 1440.273 ; gain = 0.000 ; free physical = 227 ; free virtual = 7959
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 19 21:36:02 2020...
