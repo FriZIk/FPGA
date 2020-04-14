@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/frizik/MOPEVM/fpga/Counter/Counter.srcs/sources_1/new/source1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/frizik/MOPEVM/fpga/Counter/Counter.srcs/sim_1/new/simulation_source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_bench
