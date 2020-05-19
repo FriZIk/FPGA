@@ -2,8 +2,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;  
-library UNISIM;
-use UNISIM.VComponents.all;
+--library UNISIM;
+--use UNISIM.VComponents.all;
 
 package x is
     function funcX(x:std_logic_vector) return std_logic_vector;
