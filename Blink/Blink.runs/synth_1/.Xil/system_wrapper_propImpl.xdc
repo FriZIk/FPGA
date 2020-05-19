@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:/home/frizik/MOPEVM/fpga/Blink/Blink.srcs/constrs_1/new/constr.xdc rfile:../../../Blink.srcs/constrs_1/new/constr.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN A9 [get_ports UART_rxd]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D10 [get_ports UART_txd]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H5 [get_ports {gpio_io_o[0]}]

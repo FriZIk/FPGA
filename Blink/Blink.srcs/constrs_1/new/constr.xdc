@@ -1,0 +1,8 @@
+set_property IOSTANDARD LVCMOS33 [get_ports {gpio_io_o[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports UART_rxd]
+set_property IOSTANDARD LVCMOS33 [get_ports UART_txd]
+set_property IOSTANDARD LVCMOS33 [get_ports clk_in1]
+set_property PACKAGE_PIN A9 [get_ports UART_rxd]
+set_property PACKAGE_PIN D10 [get_ports UART_txd]
+set_property PACKAGE_PIN H5 [get_ports {gpio_io_o[0]}]
+set_property PACKAGE_PIN E3 [get_ports clk_in1]
