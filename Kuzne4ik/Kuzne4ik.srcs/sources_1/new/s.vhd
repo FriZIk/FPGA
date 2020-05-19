@@ -1,21 +1,27 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
+--use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;  
 use IEEE.numeric_std.ALL;
 
-library UNISIM;
-use UNISIM.VComponents.all;
+--library UNISIM;
+--use UNISIM.VComponents.all;
 
 package s is
-function funcS(x:std_logic_vector) return std_logic_vector;
+    function funcS(x:std_logic_vector) return std_logic_vector;
 end s;
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+library work;
+use work.s.all;
 
 package body s is
     function funcS(x:std_logic_vector) return std_logic_vector is
     type Consts is array (0 to 256) of integer;
     variable input_block : std_logic_vector(128 downto 0);
     variable backup: integer;
+    variable temp: signed;
     
     variable Constss : Consts := (
     252, 238, 221, 17, 207, 110, 49, 22, 251, 196, 250, 218, 35, 197, 4, 77,
@@ -37,7 +43,9 @@ package body s is
     
     begin -- Перебор битов с заменой 
         for i in 0 to 16 loop
-            backup := to_integer(unsigned(input_block(4*i downto 8*i+8)));
+            backup := to_integer(signed(input_block(8*i downto 8*i+8)));
+            temp := to_signed(Constss(backup), 5);
+            input_block(8*i downto 8*i+8) := std_logic_vector(temp);
         end loop;
         return input_block;
     end; 
