@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="/home/frizik/MOPEVM/fpga/Kuzne4ik/Kuzne4ik.xpr">
+<Project Version="7" Minor="17" Path="/home/frizik/MOPEVM/fpga/FPGA/Kuzne4ik/Kuzne4ik.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="8f0a5f2c422742f3b1ae46810f27ae0d"/>

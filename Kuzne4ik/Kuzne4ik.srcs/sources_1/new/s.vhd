@@ -1,8 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;  
-use IEEE.numeric_std.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 library UNISIM;
 use UNISIM.VComponents.all;
@@ -38,6 +37,7 @@ package body s is
     begin -- Перебор битов с заменой 
         for i in 0 to 16 loop
             backup := to_integer(unsigned(input_block(4*i downto 8*i+8)));
+            
         end loop;
         return input_block;
     end; 
