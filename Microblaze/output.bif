@@ -1,0 +1,5 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\User\workspace\design_1_wrapper1\export\design_1_wrapper1\sw\design_1_wrapper1\boot\design_1_wrapper1.bif
+}

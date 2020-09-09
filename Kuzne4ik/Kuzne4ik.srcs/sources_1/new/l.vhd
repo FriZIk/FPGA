@@ -2,8 +2,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use work.x.all;
---library UNISIM;
---use UNISIM.VComponents.all;
 
 package l is
     function funcL(l:std_logic_vector(0 to 128)) return std_logic_vector;
@@ -33,34 +31,3 @@ package body l is
     --copy back to output
     end;
 end l;
-
-
-Преобразование R:
-
-int  funcR(unsigned char * indata , unsigned char *outdata ){
- unsigned long sum=0;
-   for(int i = 0; i < 16; ++i)
-	 {
-		  sum ^= multTable[indata[i]*256 + kB[i]];
-	 }
-
-	 outdata[0] = sum;
-	 memcpy(outdata+1, indata, 15);
-	  return -1;
-		}
-
-
-int funcL(unsigned char* indata, unsigned char* outdata)
-{
- unsigned char tmp[16];
-	 int i = 0;
- memcpy(tmp, indata, 16);
-
-	 for(i = 0; i < 16; ++i)
-     {
-		  funcR(tmp, outdata);
-          memcpy(tmp, outdata, 16);
-     }
-
- return 0;
-}

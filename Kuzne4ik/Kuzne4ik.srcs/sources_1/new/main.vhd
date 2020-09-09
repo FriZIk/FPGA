@@ -5,8 +5,8 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 library UNISIM;
 use UNISIM.VComponents.all;
 
-use work.x.all;  -- Функция X-преобразования, побитовый xor  с раундовым ключом
-use work.s.all;  -- Функция S-преобразования, нелинейное биективное преобразование (замена одних переменных на другие)
+use work.x.all; 
+use work.s.all;  
 
 entity main is
     Port (
@@ -19,6 +19,6 @@ end main;
 
 architecture Behavioral of main is
 begin
-    SecBlock <= funcX(SecBlock);
-    SecBlock <= funcS(SecBlock);     
+    SecBlock <= funcX(SecBlock);   
 end Behavioral;
+
