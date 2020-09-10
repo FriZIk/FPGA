@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Sep 10 11:36:55 2020
+# Process ID: 11656
+# Current directory: D:/VIV_PROJECTS/project_MIGALKA/project_MIGALKA.sim/sim_1/synth/func/xsim
+# Command line: wbtcv.exe -mode batch -source D:/VIV_PROJECTS/project_MIGALKA/project_MIGALKA.sim/sim_1/synth/func/xsim/xsim.dir/simulation_source_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/VIV_PROJECTS/project_MIGALKA/project_MIGALKA.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: D:/VIV_PROJECTS/project_MIGALKA/project_MIGALKA.sim/sim_1/synth/func/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/VIV_PROJECTS/project_MIGALKA/project_MIGALKA.sim/sim_1/synth/func/xsim/xsim.dir/simulation_source_func_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Sep 10 11:36:55 2020...

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/VIV_PROJECTS/project_MIGALKA/project_MIGALKA.sim/sim_1/synth/func/xsim/simulation_source_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'main'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Zimus/Downloads/simulation_source.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'simulation_source'
