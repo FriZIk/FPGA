@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Thu Aug 20 22:30:30 2020
+// Date        : Thu Aug 20 22:30:16 2020
 // Host        : DESKTOP-64PPK0Q running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/User/Microblaze/Microblaze.srcs/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_mig_7series_0_0 -prefix
+//               design_1_mig_7series_0_0_ design_1_mig_7series_0_0_stub.v
 // Design      : design_1_mig_7series_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a35ticsg324-1L
