@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx1/Vitis/2020.1/bin;C:/Xilinx1/Vivado/2020.1/ids_lite/ISE/bin/nt64;C:/Xilinx1/Vivado/2020.1/ids_lite/ISE/lib/nt64:C:/Xilinx1/Vivado/2020.1/bin
+  PATH=E:/Vitis/2020.1/bin;E:/Vivado/2020.1/ids_lite/ISE/bin/nt64;E:/Vivado/2020.1/ids_lite/ISE/lib/nt64:E:/Vivado/2020.1/bin
 else
-  PATH=C:/Xilinx1/Vitis/2020.1/bin;C:/Xilinx1/Vivado/2020.1/ids_lite/ISE/bin/nt64;C:/Xilinx1/Vivado/2020.1/ids_lite/ISE/lib/nt64:C:/Xilinx1/Vivado/2020.1/bin:$PATH
+  PATH=E:/Vitis/2020.1/bin;E:/Vivado/2020.1/ids_lite/ISE/bin/nt64;E:/Vivado/2020.1/ids_lite/ISE/lib/nt64:E:/Vivado/2020.1/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/User/Microblaze/Microblaze.runs/synth_1'
+HD_PWD='D:/VIV_PROJECTS/MICRO_BLAZE/Microblaze/Microblaze.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
