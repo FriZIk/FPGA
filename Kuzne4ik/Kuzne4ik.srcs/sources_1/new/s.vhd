@@ -34,16 +34,16 @@ package body s is
     146, 39, 94, 85, 47, 140, 163, 165, 125, 105, 213, 149, 59, 7, 88, 179, 64,
     134, 172, 29, 247, 48, 55, 107, 228, 136, 217, 231, 137, 225, 27, 131, 73,
     76, 63, 248, 254, 141, 83, 170, 144, 202, 216, 133, 97, 32, 113, 103, 164,
-    45, 43, 9, 91, 203, 155, 37, 208, 190, 229, 108, 82, 89, 166, 116, 210, 230,
+    45, 43, 9, 91, 203, 155, 37, 208, 190, 229, 108, 82, 89, 166, 116, 210, 230,+
     244, 180, 192, 209, 102, 175, 194, 57, 75, 99, 182);
     
     begin 
         for i in 0 to 16 loop
 
-            backup := to_integer(unsigned(input_block(4*i downto 8*i+8)));
+            --backup := to_integer(unsigned(input_block(4*i downto 8*i+8)));
 
             backup := to_integer(signed(input_block(8*i downto 8*i+8)));
-            temp := to_signed(Constss(backup), 5);
+            temp := to_signed(Constss(backup), 8);
             input_block(8*i downto 8*i+8) := std_logic_vector(temp);
 
         end loop;
