@@ -20,9 +20,15 @@ architecture Behavioral of SIMULATION_1 is
     signal inputBlock: std_logic_vector(0 to 15);
     signal outputBlock: std_logic_vector(0 to 15);
     signal leftKey: std_logic_vector(0 to 15);
+    
     signal workBlock: std_logic_vector(0 to 15);
-     signal temp: unsigned(0 to 7);
+    
+    signal temp: unsigned(0 to 7);
     signal temp2: unsigned(0 to 7);
+    signal tempL: unsigned(0 to 7);
+    signal tempL2: unsigned(0 to 7);
+    signal tempMult: unsigned(0 to 7);
+    signal lOutput: unsigned(0 to 15);
     
     signal eightBitBlock: integer;
     signal eightBitBlock2: integer;
