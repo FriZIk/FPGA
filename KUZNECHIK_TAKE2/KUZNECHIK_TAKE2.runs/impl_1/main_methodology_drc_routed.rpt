@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Thu Sep 24 00:43:51 2020
+| Date         : Sat Sep 26 01:39:30 2020
 | Host         : DESKTOP-IO9CP06 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file main_methodology_drc_routed.rpt -pb main_methodology_drc_routed.pb -rpx main_methodology_drc_routed.rpx
 | Design       : main
@@ -23,12 +23,23 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 2
++-----------+----------+-------------------+------------+
+| Rule      | Severity | Description       | Violations |
++-----------+----------+-------------------+------------+
+| TIMING-20 | Warning  | Non-clocked latch | 2          |
++-----------+----------+-------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch outUnsigned_reg[3] cannot be properly analyzed as its control pin outUnsigned_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch outUnsigned_reg[6] cannot be properly analyzed as its control pin outUnsigned_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
 

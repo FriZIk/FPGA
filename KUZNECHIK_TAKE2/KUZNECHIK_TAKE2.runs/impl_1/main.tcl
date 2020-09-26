@@ -124,7 +124,6 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 1
-  set_param synth.incrementalSynthesisCache C:/Users/Zimus/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20332-DESKTOP-IO9CP06/incrSyn
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35ticsg324-1L
   set_property board_part_repo_paths {C:/Users/Zimus/AppData/Roaming/Xilinx/Vivado/2020.1/xhub/board_store/xilinx_board_store} [current_project]

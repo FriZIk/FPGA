@@ -89,9 +89,35 @@ begin
         temp(6) <= workBlock(6);
         temp(7) <= workBlock(7);
 
-        eightBitBlock <= TO_INTEGER(temp(0 to 7));
-        outInteger <= constss(eightBitBlock);
-        outUnsigned(0 to 7) <= TO_UNSIGNED(outInteger, 8);
+
+P2: process (temp)
+        begin
+            C2: case temp is
+        	when "00000000" => 
+        		outUnsigned(0) <= '1';
+        		outUnsigned(1) <= '1';
+        		outUnsigned(2) <= '1';
+        		outUnsigned(3) <= '1';
+        		outUnsigned(4) <= '1';
+        		outUnsigned(5) <= '1';
+        		outUnsigned(6) <= '0';
+        		outUnsigned(7) <= '0';
+		    when "00000001" => 
+		        outUnsigned(0) <= '1';
+				outUnsigned(1) <= '1';
+				outUnsigned(2) <= '1';
+				outUnsigned(3) <= '0';
+				outUnsigned(4) <= '1';
+				outUnsigned(5) <= '1';
+				outUnsigned(6) <= '1';
+				outUnsigned(7) <= '0';
+			when others => null;
+		    
+		end case C2;
+        end process P2; 
+        --eightBitBlock <= TO_INTEGER(temp(0 to 7));
+        --outInteger <= constss(eightBitBlock);
+        --outUnsigned(0 to 7) <= TO_UNSIGNED(outInteger, 8);
 
         --second block conversion
         temp2(0) <= workBlock(8);
@@ -105,9 +131,33 @@ begin
 
         --possibly cannot use variable array index
         	--shity solution probobly needs some more work
-        eightBitBlock2 <= TO_INTEGER(temp2(0 to 7));
-        outInteger2 <= constss(eightBitBlock2);
-        outUnsigned2(0 to 7) <= TO_UNSIGNED(outInteger2, 8);
+        P1: process (temp2)
+        begin
+            C1: case temp2 is
+        	when "00000000" => 
+        		outUnsigned2(0) <= '1';
+        		outUnsigned2(1) <= '1';
+        		outUnsigned2(2) <= '1';
+        		outUnsigned2(3) <= '1';
+        		outUnsigned2(4) <= '1';
+        		outUnsigned2(5) <= '1';
+        		outUnsigned2(6) <= '0';
+        		outUnsigned2(7) <= '0';
+		    when "00000001" => 
+		        outUnsigned2(0) <= '1';
+				outUnsigned2(1) <= '1';
+				outUnsigned2(2) <= '1';
+				outUnsigned2(3) <= '0';
+				outUnsigned2(4) <= '1';
+				outUnsigned2(5) <= '1';
+				outUnsigned2(6) <= '1';
+				outUnsigned2(7) <= '0';
+			when others => null;
+            end case C1;
+        end process P1;
+        --eightBitBlock2 <= TO_INTEGER(temp2(0 to 7));
+        --outInteger2 <= constss(eightBitBlock2);
+        --outUnsigned2(0 to 7) <= TO_UNSIGNED(outInteger2, 8);
         ----outputBlockPo(8 to 15) <= std_logic_vector(outUnsigned(0 to 7));
     --END S FUNCTION
 
@@ -125,8 +175,8 @@ begin
 		tempL(7) <= outUnsigned(7) xor '0';
 
 		--THIS MEANS MULTIPLYING BY 32
-        tempL2(0) <= outUnsigned2(0)  xor '0';
-		tempL2(1) <= outUnsigned2(1)  xor '0';	
+        tempL2(0) <= outUnsigned2(0) xor '0';
+		tempL2(1) <= outUnsigned2(1) xor '0';	
 		tempL2(2) <= outUnsigned2(2) xor '0';
 		tempL2(3) <= outUnsigned2(3) xor '0';
 		tempL2(4) <= outUnsigned2(4) xor '0';
