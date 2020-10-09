@@ -10,7 +10,7 @@
     ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 
 source main.tcl -notrace
-create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 938.000 ; gain = 0.000
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1047.098 ; gain = 0.000
 Command: synth_design -top main -part xc7a35ticsg324-1L
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
@@ -18,27 +18,105 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16136
+INFO: [Synth 8-7075] Helper process launched with PID 12708
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 1026.613 ; gain = 88.613
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1047.098 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'main' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:16]
-INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:38]
-INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:38]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:105]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:4747]
 INFO: [Synth 8-256] done synthesizing module 'main' (1#1) [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:16]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:34 . Memory (MB): peak = 1082.004 ; gain = 144.004
+Finished RTL Elaboration : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 1082.004 ; gain = 144.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 1082.004 ; gain = 144.004
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1082.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1283.246 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -49,37 +127,38 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1164.320 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1283.246 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1164.320 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1283.246 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:58 . Memory (MB): peak = 1164.320 ; gain = 226.320
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:58 . Memory (MB): peak = 1164.320 ; gain = 226.320
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:58 . Memory (MB): peak = 1164.320 ; gain = 226.320
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 1164.320 ; gain = 226.320
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:57 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 6     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 17    
-	   3 Input      1 Bit         XORs := 8     
+	   2 Input      1 Bit         XORs := 336   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -96,21 +175,148 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:01:07 . Memory (MB): peak = 1164.320 ; gain = 226.320
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 ROM: Preliminary Mapping	Report
-+------------+------------+---------------+----------------+
-|Module Name | RTL Object | Depth x Width | Implemented As | 
-+------------+------------+---------------+----------------+
-|main        | outputPart | 256x8         | LUT            | 
-|main        | outputPart | 256x8         | LUT            | 
-|main        | outputPart | 256x8         | LUT            | 
-|main        | outputPart | 256x8         | LUT            | 
-+------------+------------+---------------+----------------+
++------------+-----------------+---------------+----------------+
+|Module Name | RTL Object      | Depth x Width | Implemented As | 
++------------+-----------------+---------------+----------------+
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | firIterRes_out1 | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
+|main        | result          | 256x8         | LUT            | 
++------------+-----------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -119,19 +325,19 @@ Finished ROM, RAM, DSP and Shift Register Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 1164.320 ; gain = 226.320
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:51 ; elapsed = 00:02:07 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 1164.320 ; gain = 226.320
+Finished Timing Optimization : Time (s): cpu = 00:01:51 ; elapsed = 00:02:08 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 1181.797 ; gain = 243.797
+Finished Technology Mapping : Time (s): cpu = 00:01:54 ; elapsed = 00:02:10 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -149,37 +355,108 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Finished IO Insertion : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[7] with 1st driver pin 'outputBlockPo_OBUF[4]_inst_i_3/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[7] with 2nd driver pin 'outputBlockPo_OBUF[4]_inst_i_4/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[7] with 3rd driver pin 'outputBlockPo_OBUF[4]_inst_i_5/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[7] with 4th driver pin 'outputBlockPo_OBUF[4]_inst_i_6/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[6] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_13/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[6] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_14/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[6] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_15/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[6] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_16/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[5] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_54/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[5] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_55/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[5] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_56/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[5] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_57/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[4] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_58/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[4] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_59/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[4] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_60/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[4] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_61/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[3] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_62/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[3] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_63/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[3] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_64/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[3] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_65/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[2] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_70/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[2] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_71/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[2] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_72/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[2] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_73/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[1] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_66/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[1] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_67/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[1] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_68/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[1] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_69/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[0] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_74/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[0] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_75/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[0] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_76/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey1[0] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_77/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[7] with 1st driver pin 'g0_b0_i_11/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[7] with 2nd driver pin 'g0_b0_i_12/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[7] with 3rd driver pin 'g0_b0_i_13/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[7] with 4th driver pin 'g0_b0_i_14/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[6] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_6/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[6] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_7/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[6] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_8/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[6] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_9/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[5] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_20/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[5] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_21/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[5] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_22/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[5] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_23/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[4] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_24/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[4] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_25/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[4] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_26/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[4] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_27/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[3] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_28/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[3] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_29/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[3] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_30/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[3] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_31/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[2] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_36/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[2] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_37/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[2] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_38/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[2] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_39/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[1] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_32/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[1] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_33/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[1] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_34/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[1] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_35/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[0] with 1st driver pin 'outputBlockPo_OBUF[0]_inst_i_40/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[0] with 2nd driver pin 'outputBlockPo_OBUF[0]_inst_i_41/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[0] with 3rd driver pin 'outputBlockPo_OBUF[0]_inst_i_42/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin testKey2[0] with 4th driver pin 'outputBlockPo_OBUF[0]_inst_i_43/O' [D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:2436]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       16|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -192,33 +469,40 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT2 |    15|
-|2     |LUT4 |    32|
-|3     |LUT6 |    80|
-|4     |IBUF |    32|
-|5     |OBUF |    16|
-+------+-----+------+
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |    94|
+|2     |LUT3  |   145|
+|3     |LUT4  |     2|
+|4     |LUT5  |   112|
+|5     |LUT6  |  2158|
+|6     |MUXF7 |   493|
+|7     |MUXF8 |   176|
+|8     |IBUF  |    48|
+|9     |OBUF  |    16|
++------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:05 ; elapsed = 00:02:23 . Memory (MB): peak = 1283.246 ; gain = 236.148
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:01:26 . Memory (MB): peak = 1188.578 ; gain = 168.262
-Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:35 . Memory (MB): peak = 1188.578 ; gain = 250.578
+Synthesis finished with 0 errors, 64 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:33 ; elapsed = 00:02:20 . Memory (MB): peak = 1283.246 ; gain = 236.148
+Synthesis Optimization Complete : Time (s): cpu = 00:02:05 ; elapsed = 00:02:24 . Memory (MB): peak = 1283.246 ; gain = 236.148
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1200.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 1291.031 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 669 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'main' is not ideal for floorplanning, since the cellview 'main' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1203.910 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1291.031 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-17 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+97 Infos, 1 Warnings, 64 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:02:16 . Memory (MB): peak = 1203.910 ; gain = 265.910
+synth_design: Time (s): cpu = 00:02:18 ; elapsed = 00:02:45 . Memory (MB): peak = 1291.031 ; gain = 243.934
 INFO: [Common 17-1381] The checkpoint 'D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 29 15:15:46 2020...
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 14:49:28 2020...
