@@ -1,7 +1,0 @@
-Vivado Simulator 2020.1
-Time resolution is 1 ps
-ERROR: Index -2147483648 out of bound 0 to 255
-Time: 0 ps  Iteration: 0  Process: /SIMULATION_1/UUT/line__97
-  File: D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd
-
-HDL Line: D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sources_1/new/main.vhd:97

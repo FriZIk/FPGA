@@ -7173,8 +7173,8 @@
 		        tableShift(inputPart=>temp2, result=>outUnsignedD);
 
 		    --l
-		    	numToPower(numba=>outUnsigned(0 to 7), result=>testKey2);
-		 		numToPower(numba=>outUnsignedD(0 to 7), result=>testKey1);
+		    	numToPower(numba=>outUnsigned(0 to 7), result=>testKey1);
+		 		numToPower(numba=>outUnsignedD(0 to 7), result=>testKey2);
 		 		numToPower(numba=>testCoef1, result=>testCoef1Tab);
 		 		numToPower(numba=>testCoef2, result=>testCoef2Tab);
 
@@ -7296,13 +7296,13 @@
 				SecBlocCon=>SecBlocCon, outputBlockPo=>secinputBlockPo);
 
 			textBlockEncoding(inputBlockPo=>secinputBlockPo, keyPo=>masterKey2, workblock=>secworkblock, temp=>sectemp, temp2=>sectemp2, outUnsigned=>secoutUnsigned,
-				outUnsignedD=>secoutUnsignedD, testKey1=>testKey1, testKey2=>testKey2, testCoef1=>sectestCoef1, testCoef1Tab=>sectestCoef1Tab, 
-				testCoef2=>sectestCoef2, testCoef2Tab=>sectestCoef2Tab, firBlocNoCon=>secfirBlocNoCon, SecBlocNoCon=>secSecBlocNoCon, firBlocCon=>secfirBlocCon,
+				outUnsignedD=>secoutUnsignedD, testKey1=>sectestKey1, testKey2=>sectestKey2, testCoef1=>testCoef1, testCoef1Tab=>sectestCoef1Tab, 
+				testCoef2=>testCoef2, testCoef2Tab=>sectestCoef2Tab, firBlocNoCon=>secfirBlocNoCon, SecBlocNoCon=>secSecBlocNoCon, firBlocCon=>secfirBlocCon,
 				SecBlocCon=>secSecBlocCon, outputBlockPo=>thirinputBlockPo);
 
 			textBlockEncoding(inputBlockPo=>thirinputBlockPo, keyPo=>eigIterIn, workblock=>thirworkblock, temp=>thirtemp, temp2=>thirtemp2, outUnsigned=>thiroutUnsigned,
-				outUnsignedD=>thiroutUnsignedD, testKey1=>testKey1, testKey2=>testKey2, testCoef1=>thirtestCoef1, testCoef1Tab=>thirtestCoef1Tab, 
-				testCoef2=>thirtestCoef2, testCoef2Tab=>thirtestCoef2Tab, firBlocNoCon=>thirfirBlocNoCon, SecBlocNoCon=>thirSecBlocNoCon, firBlocCon=>thirfirBlocCon,
+				outUnsignedD=>thiroutUnsignedD, testKey1=>thirtestKey1, testKey2=>thirtestKey2, testCoef1=>testCoef1, testCoef1Tab=>thirtestCoef1Tab, 
+				testCoef2=>testCoef2, testCoef2Tab=>thirtestCoef2Tab, firBlocNoCon=>thirfirBlocNoCon, SecBlocNoCon=>thirSecBlocNoCon, firBlocCon=>thirfirBlocCon,
 				SecBlocCon=>thirSecBlocCon, outputBlockPo=>fouinputBlockPo);
 
 			--textBlockEncoding(inputBlockPo=>fouinputBlockPo, keyPo=>ninIterIn, workblock=>fouworkblock, temp=>foutemp, temp2=>foutemp2, outUnsigned=>fououtUnsigned,
@@ -7312,98 +7312,59 @@
 
 			--xor16bit(firBlock=>fouinputBlockPo, secBlock=>ninIterIn, result=>fououtputBlockPo);
 
-			fououtputBlockPo(0)  <= fouinputBlockPo(0)  xor ninIterIn(0);
-	    	fououtputBlockPo(1)  <= fouinputBlockPo(1)  xor ninIterIn(1);
-	    	fououtputBlockPo(2)  <= fouinputBlockPo(2)  xor ninIterIn(2);
-	    	fououtputBlockPo(3)  <= fouinputBlockPo(3)  xor ninIterIn(3);
-	    	fououtputBlockPo(4)  <= fouinputBlockPo(4)  xor ninIterIn(4);
-	    	fououtputBlockPo(5)  <= fouinputBlockPo(5)  xor ninIterIn(5);
-	    	fououtputBlockPo(6)  <= fouinputBlockPo(6)  xor ninIterIn(6);
-	    	fououtputBlockPo(7)  <= fouinputBlockPo(7)  xor ninIterIn(7);
-	    	fououtputBlockPo(8)  <= fouinputBlockPo(8)  xor ninIterIn(8);
-	    	fououtputBlockPo(9)  <= fouinputBlockPo(9)  xor ninIterIn(9);
-	    	fououtputBlockPo(10) <= fouinputBlockPo(10) xor ninIterIn(10);
-	    	fououtputBlockPo(11) <= fouinputBlockPo(11) xor ninIterIn(11);
-	    	fououtputBlockPo(12) <= fouinputBlockPo(12) xor ninIterIn(12);
-	    	fououtputBlockPo(13) <= fouinputBlockPo(13) xor ninIterIn(13);
-	    	fououtputBlockPo(14) <= fouinputBlockPo(14) xor ninIterIn(14);
-	    	fououtputBlockPo(15) <= fouinputBlockPo(15) xor ninIterIn(15);
+			--fououtputBlockPo(0)  <= fouinputBlockPo(0)  xor ninIterIn(0);
+	    	--fououtputBlockPo(1)  <= fouinputBlockPo(1)  xor ninIterIn(1);
+	    	--fououtputBlockPo(2)  <= fouinputBlockPo(2)  xor ninIterIn(2);
+	    	--fououtputBlockPo(3)  <= fouinputBlockPo(3)  xor ninIterIn(3);
+	    	--fououtputBlockPo(4)  <= fouinputBlockPo(4)  xor ninIterIn(4);
+	    	--fououtputBlockPo(5)  <= fouinputBlockPo(5)  xor ninIterIn(5);
+	    	--fououtputBlockPo(6)  <= fouinputBlockPo(6)  xor ninIterIn(6);
+	    	--fououtputBlockPo(7)  <= fouinputBlockPo(7)  xor ninIterIn(7);
+	    	--fououtputBlockPo(8)  <= fouinputBlockPo(8)  xor ninIterIn(8);
+	    	--fououtputBlockPo(9)  <= fouinputBlockPo(9)  xor ninIterIn(9);
+	    	--fououtputBlockPo(10) <= fouinputBlockPo(10) xor ninIterIn(10);
+	    	--fououtputBlockPo(11) <= fouinputBlockPo(11) xor ninIterIn(11);
+	    	--fououtputBlockPo(12) <= fouinputBlockPo(12) xor ninIterIn(12);
+	    	--fououtputBlockPo(13) <= fouinputBlockPo(13) xor ninIterIn(13);
+	    	--fououtputBlockPo(14) <= fouinputBlockPo(14) xor ninIterIn(14);
+	    	--fououtputBlockPo(15) <= fouinputBlockPo(15) xor ninIterIn(15);
+
+	    	fououtputBlockPo(0)  <=  fouinputBlockPo(0) ; 
+			fououtputBlockPo(1)  <=  fouinputBlockPo(1) ; 
+			fououtputBlockPo(2)  <=  fouinputBlockPo(2) ; 
+			fououtputBlockPo(3)  <=  fouinputBlockPo(3) ; 
+			fououtputBlockPo(4)  <=  fouinputBlockPo(4) ; 
+			fououtputBlockPo(5)  <=  fouinputBlockPo(5) ; 
+			fououtputBlockPo(6)  <=  fouinputBlockPo(6) ; 
+			fououtputBlockPo(7)  <=  fouinputBlockPo(7) ; 
+			fououtputBlockPo(8)  <=  fouinputBlockPo(8) ; 
+			fououtputBlockPo(9)  <=  fouinputBlockPo(9) ; 
+			fououtputBlockPo(10) <=  fouinputBlockPo(10); 
+			fououtputBlockPo(11) <=  fouinputBlockPo(11); 
+			fououtputBlockPo(12) <=  fouinputBlockPo(12); 
+			fououtputBlockPo(13) <=  fouinputBlockPo(13); 
+			fououtputBlockPo(14) <=  fouinputBlockPo(14); 
+			fououtputBlockPo(15) <=  fouinputBlockPo(15); 
 
 
-	 --  	--THAT IS X FUNCTION
-	 --       workBlock(0) <= InputBlockPo(0) xor keyPo(0);
-	 --       workBlock(1) <= InputBlockPo(1) xor keyPo(1);
-	 --       workBlock(2) <= InputBlockPo(2) xor keyPo(2);
-	 --       workBlock(3) <= InputBlockPo(3) xor keyPo(3);
-	 --       workBlock(4) <= InputBlockPo(4) xor keyPo(4);
-	 --       workBlock(5) <= InputBlockPo(5) xor keyPo(5);
-	 --       workBlock(6) <= InputBlockPo(6) xor keyPo(6);
-	 --       workBlock(7) <= InputBlockPo(7) xor keyPo(7);
-	        
-	 --       workBlock(8) <= InputBlockPo(8) xor keyPo(8);
-	 --       workBlock(9) <= InputBlockPo(9) xor keyPo(9);
-	 --       workBlock(10) <= InputBlockPo(10) xor keyPo(10);
-	 --       workBlock(11) <= InputBlockPo(11) xor keyPo(11);
-	 --       workBlock(12) <= InputBlockPo(12) xor keyPo(12);
-	 --       workBlock(13) <= InputBlockPo(13) xor keyPo(13);
-	 --       workBlock(14) <= InputBlockPo(14) xor keyPo(14);
-	 --       workBlock(15) <= InputBlockPo(15) xor keyPo(15);
-	 --   --END X FUNCTION  
 
-	 --   --THAT IS S FUNCTION   
-	 --       --first block conversion through table
-	 --       --why dont we just convert pieces of workblock??
-	 --       temp(0) <= workBlock(0);
-	 --       temp(1) <= workBlock(1);
-	 --       temp(2) <= workBlock(2);
-	 --       temp(3) <= workBlock(3);
-	 --       temp(4) <= workBlock(4);
-	 --       temp(5) <= workBlock(5);
-	 --       temp(6) <= workBlock(6);
-	 --       temp(7) <= workBlock(7);
-		--	tableShift(inputPart=>temp, result=>outUnsigned);
 
-	 --       --second block conversion
-	 --       temp2(0) <= workBlock(8);
-	 --       temp2(1) <= workBlock(9);
-	 --       temp2(2) <= workBlock(10);
-	 --       temp2(3) <= workBlock(11);
-	 --       temp2(4) <= workBlock(12);
-	 --       temp2(5) <= workBlock(13);
-	 --       temp2(6) <= workBlock(14);
-	 --       temp2(7) <= workBlock(15);
-	 --       tableShift(inputPart=>temp2, result=>outUnsignedD);
-		----END S FUNCTION
-	        
-	  
-	 --	--TRUE L
-	 --		numToPower(numba=>outUnsigned(0 to 7), result=>testKey2);
-	 --		numToPower(numba=>outUnsignedD(0 to 7), result=>testKey1);
-	 --		numToPower(numba=>testCoef1, result=>testCoef1Tab);
-	 --		numToPower(numba=>testCoef2, result=>testCoef2Tab);
-
-	 --		firBlocNoCon(0 to 7) <= to_unsigned(to_integer(testKey1) + to_integer(testCoef1Tab), 8);
-	 --		SecBlocNoCon(0 to 7) <= to_unsigned(to_integer(testKey2) + to_integer(testCoef2Tab), 8);
-
-	 --		powToNumber(powa=>firBlocNoCon, result=>firBlocCon);
-	 --		powToNumber(powa=>SecBlocNoCon, result=>SecBlocCon);
-
-	 		outputBlockPort(0)     <= fououtputBlockPo(0);
-			outputBlockPort(1)     <= fououtputBlockPo(1);
-			outputBlockPort(2)     <= fououtputBlockPo(2);
-			outputBlockPort(3)     <= fououtputBlockPo(3);
-			outputBlockPort(4)     <= fououtputBlockPo(4);
-			outputBlockPort(5)     <= fououtputBlockPo(5);
-			outputBlockPort(6)     <= fououtputBlockPo(6);
-			outputBlockPort(7)     <= fououtputBlockPo(7);
-			outputBlockPort(8)     <= fououtputBlockPo(0);
-			outputBlockPort(9)     <= fououtputBlockPo(1);
-			outputBlockPort(10)    <= fououtputBlockPo(2);
-			outputBlockPort(11)    <= fououtputBlockPo(3);
-			outputBlockPort(12)    <= fououtputBlockPo(4);
-			outputBlockPort(13)    <= fououtputBlockPo(5);
-			outputBlockPort(14)    <= fououtputBlockPo(6);
-			outputBlockPort(15)    <= fououtputBlockPo(7);
+	 		outputBlockPort(0)     <= fououtputBlockPo(0) ;
+			outputBlockPort(1)     <= fououtputBlockPo(1) ;
+			outputBlockPort(2)     <= fououtputBlockPo(2) ;
+			outputBlockPort(3)     <= fououtputBlockPo(3) ;
+			outputBlockPort(4)     <= fououtputBlockPo(4) ;
+			outputBlockPort(5)     <= fououtputBlockPo(5) ;
+			outputBlockPort(6)     <= fououtputBlockPo(6) ;
+			outputBlockPort(7)     <= fououtputBlockPo(7) ;
+			outputBlockPort(8)     <= fououtputBlockPo(8) ;
+			outputBlockPort(9)     <= fououtputBlockPo(9) ;
+			outputBlockPort(10)    <= fououtputBlockPo(10);
+			outputBlockPort(11)    <= fououtputBlockPo(11);
+			outputBlockPort(12)    <= fououtputBlockPo(12);
+			outputBlockPort(13)    <= fououtputBlockPo(13);
+			outputBlockPort(14)    <= fououtputBlockPo(14);
+			outputBlockPort(15)    <= fououtputBlockPo(15);
 
 	 	--END TRUE L
 	end Behavioral;
