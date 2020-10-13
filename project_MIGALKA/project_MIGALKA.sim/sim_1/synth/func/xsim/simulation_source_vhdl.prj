@@ -1,7 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"simulation_source_func_synth.vhd" \
-"C:/Users/Zimus/Downloads/simulation_source.vhd" \
-
-# Do not sort compile order
-nosort
