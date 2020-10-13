@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param synth.incrementalSynthesisCache C:/Users/Zimus/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18044-DESKTOP-IO9CP06/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -84,6 +85,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part_repo_paths {C:/Users/Zimus/AppData/Roaming/Xilinx/Vivado/2020.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:arty-a7-35:part0:1.0 [current_project]
+set_property ip_repo_paths d:/fpga/kuznechik_take2/kuznechik_take2.srcs [current_project]
+update_ip_catalog
 set_property ip_output_repo d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }

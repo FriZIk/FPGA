@@ -14,17 +14,10 @@
 	end main;
 
 	architecture Behavioral of main is
-
-		signal keyInput: std_logic_vector(0 to 32);
-		signal iterKey1: unsigned(0 to 32);
-		signal iterXorRes1: unsigned(0 to 32);
-	   
-	    signal workBlock: unsigned(0 to 15);
+		signal workBlock: unsigned(0 to 15);
 	    
 	    signal temp:   unsigned(0 to 7);
 	    signal temp2:  unsigned(0 to 7);
-	    signal tempL:  unsigned(0 to 7);
-	    signal tempL2: unsigned(0 to 7);
 	 
 	    signal signalForXor:  unsigned(0 to 7);
 	    signal signalForXor2: unsigned(0 to 7);
@@ -32,20 +25,13 @@
 	    signal outUnsigned:  unsigned(0 to 7);
 	    signal outUnsignedD: unsigned(0 to 7);
 
-	    signal testKey: unsigned(0 to 15);
 	    signal testCoef1: unsigned(0 to 7);
 		signal testCoef2: unsigned(0 to 7);
 		signal testCoef1Tab: unsigned(0 to 7);
 		signal testCoef2Tab: unsigned(0 to 7);
 		signal testKey1: unsigned(0 to 7);
 		signal testKey2: unsigned(0 to 7);
-		signal key1Int: integer;
-		signal key2Int: integer;
-		signal coef1Int: integer;
 		signal coef2Int, intCoef1, intCoef2: integer;
-
-		signal mul1: integer;
-		signal mul2: integer;
 
 		signal firBlocNoCon: unsigned(0 to 7);
 		signal SecBlocNoCon: unsigned(0 to 7);
@@ -94,12 +80,9 @@
 	 		thirfirBlocCon, thirSecBlocCon:  unsigned(0 to 7); 
 	 		signal thiroutputBlockPo: unsigned(0 to 15);
 
-	 		signal fouworkBlock, fouinputBlockPo:  unsigned(0 to 15);
-	 		signal foutemp, foutemp2, fououtUnsigned, fououtUnsignedD, foutestKey1, foutestKey2, foutestCoef1, foutestCoef1Tab, foutestCoef2,
-	 		foutestCoef2Tab, foufirBlocNoCon, fouSecBlocNoCon, 
-	 		foufirBlocCon, fouSecBlocCon:  unsigned(0 to 7); 
-	 		signal fououtputBlockPo: unsigned(0 to 15);
-
+	 		signal fouworkBlock, fouinputBlockPo, fououtputBlockPo:  unsigned(0 to 15);
+	 		
+	 	--замена через таблицу коэфициентов
 	    procedure tableShift(signal inputPart: in unsigned(0 to 7); signal result:out unsigned(0 to 7)) is
 	    begin
 	    	C: case inputPart is
@@ -2411,26 +2394,27 @@
 				end case C;
 	    end tableShift;
 
-	    procedure keyHalfXor(signal inputKey: in unsigned(0 to 15); signal outputKey: out unsigned(0 to 15)) is 
-	    begin
-	    	outputKey(0)  <=  inputKey(8);
-	    	outputKey(1)  <=  inputKey(9);
-	    	outputKey(2)  <=  inputKey(10);
-	    	outputKey(3)  <=  inputKey(11);
-	    	outputKey(4)  <=  inputKey(12);
-	    	outputKey(5)  <=  inputKey(13);
-	    	outputKey(6)  <=  inputKey(14);
-	    	outputKey(7)  <=  inputKey(15);
-	    	outputKey(8)  <= inputKey(0)  xor inputKey(8);
-	    	outputKey(9)  <= inputKey(1)  xor inputKey(9);
-	    	outputKey(10) <= inputKey(2)  xor inputKey(10);
-	    	outputKey(11) <= inputKey(3)  xor inputKey(11);
-	    	outputKey(12) <= inputKey(4)  xor inputKey(12);
-	    	outputKey(13) <= inputKey(5)  xor inputKey(13);
-	    	outputKey(14) <= inputKey(6)  xor inputKey(14);
-	    	outputKey(15) <= inputKey(7)  xor inputKey(15);
-	    end keyHalfXor;
+	    --procedure keyHalfXor(signal inputKey: in unsigned(0 to 15); signal outputKey: out unsigned(0 to 15)) is 
+	    --begin
+	    --	outputKey(0)  <=  inputKey(8);
+	    --	outputKey(1)  <=  inputKey(9);
+	    --	outputKey(2)  <=  inputKey(10);
+	    --	outputKey(3)  <=  inputKey(11);
+	    --	outputKey(4)  <=  inputKey(12);
+	    --	outputKey(5)  <=  inputKey(13);
+	    --	outputKey(6)  <=  inputKey(14);
+	    --	outputKey(7)  <=  inputKey(15);
+	    --	outputKey(8)  <= inputKey(0)  xor inputKey(8);
+	    --	outputKey(9)  <= inputKey(1)  xor inputKey(9);
+	    --	outputKey(10) <= inputKey(2)  xor inputKey(10);
+	    --	outputKey(11) <= inputKey(3)  xor inputKey(11);
+	    --	outputKey(12) <= inputKey(4)  xor inputKey(12);
+	    --	outputKey(13) <= inputKey(5)  xor inputKey(13);
+	    --	outputKey(14) <= inputKey(6)  xor inputKey(14);
+	    --	outputKey(15) <= inputKey(7)  xor inputKey(15);
+	    --end keyHalfXor;
 
+	    --перевод в степени полей галуа, используется в полях галлуа
 	    procedure numToPower(signal numba: in unsigned(0 to 7); signal result: out unsigned(0 to 7)) is
 	    begin
 	    	case numba is
@@ -7053,6 +7037,7 @@
 			end case;
 	    end powToNumber;
 
+	    -- икс функция
 	    procedure xor16bit(signal firBlock, secBlock: in unsigned(0 to 15); signal result: out unsigned(0 to 15)) is
 	    begin
 	    	result(0)  <= firBlock(0)  xor secBlock(0);
@@ -7071,24 +7056,9 @@
 	    	result(13) <= firBlock(13) xor secBlock(13);
 	    	result(14) <= firBlock(14) xor secBlock(14);
 	    	result(15) <= firBlock(15) xor secBlock(15);
-	    	--result(16) <= firBlock(16) xor secBlock(16);
-	    	--result(17) <= firBlock(17) xor secBlock(17);
-	    	--result(18) <= firBlock(18) xor secBlock(18);
-	    	--result(19) <= firBlock(19) xor secBlock(19);
-	    	--result(20) <= firBlock(20) xor secBlock(20);
-	    	--result(21) <= firBlock(21) xor secBlock(21);
-	    	--result(22) <= firBlock(22) xor secBlock(22);
-	    	--result(23) <= firBlock(23) xor secBlock(23);
-	    	--result(24) <= firBlock(24) xor secBlock(24);
-	    	--result(25) <= firBlock(25) xor secBlock(25);
-	    	--result(26) <= firBlock(26) xor secBlock(26);
-	    	--result(27) <= firBlock(27) xor secBlock(27);
-	    	--result(28) <= firBlock(28) xor secBlock(28);
-	    	--result(29) <= firBlock(29) xor secBlock(29);
-	    	--result(30) <= firBlock(30) xor secBlock(30);
-	    	--result(31) <= firBlock(31) xor secBlock(31);
 	    end xor16bit;
 
+	    --итерационная функция генерации раундого ключа
 	    procedure keyGenRound(signal masterKey2, masterKey1, c1: in unsigned(0 to 15); signal secIterIn:out unsigned(0 to 15);
 	    	signal firIterS1, firIterS2, firIterSum1, firIterSum2, firIterPow1, firIterPow2, firIterNum1, firIterNum2: inout unsigned(0 to 7);
 	    	signal intCoef1, intCoef2:in integer; signal firIterRes, firIterXor: inout unsigned(0 to 15)) is
@@ -7128,6 +7098,7 @@
 			xor16bit(firBlock=>masterKey1, secBlock=>firIterRes, result=>secIterIn);
 	    end keyGenRound;
 
+	    --функция одного раунда шифрования текста
 		procedure textBlockEncoding(signal inputBlockPo, keyPo: in unsigned(0 to 15); 
 			signal workBlock: inout unsigned(0 to 15);
 			signal temp, temp2, outUnsigned, outUnsignedD, testKey1, testKey2, testCoef1, testCoef1Tab, testCoef2, testCoef2Tab, firBlocNoCon, SecBlocNoCon, firBlocCon, SecBlocCon: inout unsigned(0 to 7);
@@ -7305,50 +7276,9 @@
 				testCoef2=>testCoef2, testCoef2Tab=>thirtestCoef2Tab, firBlocNoCon=>thirfirBlocNoCon, SecBlocNoCon=>thirSecBlocNoCon, firBlocCon=>thirfirBlocCon,
 				SecBlocCon=>thirSecBlocCon, outputBlockPo=>fouinputBlockPo);
 
-			--textBlockEncoding(inputBlockPo=>fouinputBlockPo, keyPo=>ninIterIn, workblock=>fouworkblock, temp=>foutemp, temp2=>foutemp2, outUnsigned=>fououtUnsigned,
-			--	outUnsignedD=>fououtUnsignedD, testKey1=>testKey1, testKey2=>testKey2, testCoef1=>foutestCoef1, testCoef1Tab=>foutestCoef1Tab, 
-			--	testCoef2=>foutestCoef2, testCoef2Tab=>foutestCoef2Tab, firBlocNoCon=>foufirBlocNoCon, SecBlocNoCon=>fouSecBlocNoCon, firBlocCon=>foufirBlocCon,
-			--	SecBlocCon=>fouSecBlocCon, outputBlockPo=>fououtputBlockPo); 
+			xor16bit(firBlock=>fouinputBlockPo, secBlock=>ninIterIn, result=>fououtputBlockPo);
 
-			--xor16bit(firBlock=>fouinputBlockPo, secBlock=>ninIterIn, result=>fououtputBlockPo);
-
-			--fououtputBlockPo(0)  <= fouinputBlockPo(0)  xor ninIterIn(0);
-	    	--fououtputBlockPo(1)  <= fouinputBlockPo(1)  xor ninIterIn(1);
-	    	--fououtputBlockPo(2)  <= fouinputBlockPo(2)  xor ninIterIn(2);
-	    	--fououtputBlockPo(3)  <= fouinputBlockPo(3)  xor ninIterIn(3);
-	    	--fououtputBlockPo(4)  <= fouinputBlockPo(4)  xor ninIterIn(4);
-	    	--fououtputBlockPo(5)  <= fouinputBlockPo(5)  xor ninIterIn(5);
-	    	--fououtputBlockPo(6)  <= fouinputBlockPo(6)  xor ninIterIn(6);
-	    	--fououtputBlockPo(7)  <= fouinputBlockPo(7)  xor ninIterIn(7);
-	    	--fououtputBlockPo(8)  <= fouinputBlockPo(8)  xor ninIterIn(8);
-	    	--fououtputBlockPo(9)  <= fouinputBlockPo(9)  xor ninIterIn(9);
-	    	--fououtputBlockPo(10) <= fouinputBlockPo(10) xor ninIterIn(10);
-	    	--fououtputBlockPo(11) <= fouinputBlockPo(11) xor ninIterIn(11);
-	    	--fououtputBlockPo(12) <= fouinputBlockPo(12) xor ninIterIn(12);
-	    	--fououtputBlockPo(13) <= fouinputBlockPo(13) xor ninIterIn(13);
-	    	--fououtputBlockPo(14) <= fouinputBlockPo(14) xor ninIterIn(14);
-	    	--fououtputBlockPo(15) <= fouinputBlockPo(15) xor ninIterIn(15);
-
-	    	fououtputBlockPo(0)  <=  fouinputBlockPo(0) ; 
-			fououtputBlockPo(1)  <=  fouinputBlockPo(1) ; 
-			fououtputBlockPo(2)  <=  fouinputBlockPo(2) ; 
-			fououtputBlockPo(3)  <=  fouinputBlockPo(3) ; 
-			fououtputBlockPo(4)  <=  fouinputBlockPo(4) ; 
-			fououtputBlockPo(5)  <=  fouinputBlockPo(5) ; 
-			fououtputBlockPo(6)  <=  fouinputBlockPo(6) ; 
-			fououtputBlockPo(7)  <=  fouinputBlockPo(7) ; 
-			fououtputBlockPo(8)  <=  fouinputBlockPo(8) ; 
-			fououtputBlockPo(9)  <=  fouinputBlockPo(9) ; 
-			fououtputBlockPo(10) <=  fouinputBlockPo(10); 
-			fououtputBlockPo(11) <=  fouinputBlockPo(11); 
-			fououtputBlockPo(12) <=  fouinputBlockPo(12); 
-			fououtputBlockPo(13) <=  fouinputBlockPo(13); 
-			fououtputBlockPo(14) <=  fouinputBlockPo(14); 
-			fououtputBlockPo(15) <=  fouinputBlockPo(15); 
-
-
-
-
+		--ВЫВОД
 	 		outputBlockPort(0)     <= fououtputBlockPo(0) ;
 			outputBlockPort(1)     <= fououtputBlockPo(1) ;
 			outputBlockPort(2)     <= fououtputBlockPo(2) ;
@@ -7365,6 +7295,4 @@
 			outputBlockPort(13)    <= fououtputBlockPo(13);
 			outputBlockPort(14)    <= fououtputBlockPo(14);
 			outputBlockPort(15)    <= fououtputBlockPo(15);
-
-	 	--END TRUE L
 	end Behavioral;
