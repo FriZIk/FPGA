@@ -1,0 +1,370 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1060.906 ; gain = 0.000
+Command: synth_design -top main -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 13700
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1060.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:15]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:88]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:2398]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:4709]
+INFO: [Synth 8-256] done synthesizing module 'main' (1#1) [D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.srcs/sources_1/new/main.vhd:15]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1060.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1060.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1060.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 1060.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 328   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:45 ; elapsed = 00:02:02 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum1_out0 | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | firIterRes_out1  | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | firIterSum2_out0 | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
+|main        | result           | 256x8         | LUT            | 
++------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:46 ; elapsed = 00:02:04 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:02:07 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |    79|
+|2     |LUT3  |    74|
+|3     |LUT4  |    22|
+|4     |LUT5  |    30|
+|5     |LUT6  |  1979|
+|6     |MUXF7 |   352|
+|7     |MUXF8 |   170|
+|8     |IBUF  |    48|
+|9     |OBUF  |    16|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  2770|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+Synthesis Optimization Complete : Time (s): cpu = 00:02:01 ; elapsed = 00:02:22 . Memory (MB): peak = 1071.766 ; gain = 10.859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1074.492 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 522 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'main' is not ideal for floorplanning, since the cellview 'main' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1118.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+86 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:15 ; elapsed = 00:02:44 . Memory (MB): peak = 1118.809 ; gain = 57.902
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/REERS_KUZNECHIK/REERS_KUZNECHIK.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 13:44:28 2020...

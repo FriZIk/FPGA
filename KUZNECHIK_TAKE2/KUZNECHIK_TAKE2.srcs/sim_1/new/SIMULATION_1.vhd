@@ -31,7 +31,7 @@ begin
         process
         begin
         
-        inputBlock <= x"ffff";
+        inputBlock <= x"c891";
         leftKey <= to_unsigned(0, 32);
         
         wait for 100 ns;
