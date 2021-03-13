@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.sim/sim_1/impl/timing/xsim/SIMULATION_1_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs/sim_1/new/SIMULATION_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SIMULATION_1'

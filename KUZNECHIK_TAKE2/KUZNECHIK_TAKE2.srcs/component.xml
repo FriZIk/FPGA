@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>Kuznechik</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>main</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f0a835d7</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>main</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f82345bc</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>SIMULATION_1</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3d67d4d9</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>inputBlockPo</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">15</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>unsigned</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>keyPo</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">31</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>unsigned</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>outputBlockPort</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">15</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>unsigned</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>constrs_1/new/main_constrain.xdc</spirit:name>
+        <spirit:userFileType>xdc</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>sources_1/new/main.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f82345bc</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sources_1/new/main.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim_1/new/SIMULATION_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/Kuznechik_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>text encoding</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Kuznechik_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>Kuznechik</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>11</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2020-10-20T08:30:02Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b4a78f_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@779b6923_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e19629e_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a456c72_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13510ba5_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b809f05_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50984ebd_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c9a7d73_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cefaaa2_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@724eec91_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@225b128f_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2786607c_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73a6b4f6_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b5fb178_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29566c40_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ee1e57f_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0a6573_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@580d2d8b_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1dccba14_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d0546ec_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e9c1e9e_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f0f7f53_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@108bca82_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@123fc9ec_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@759f2b28_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6036b905_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@92b1823_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57753444_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@637eafd4_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c0e9df5_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@574b5c7d_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f53ea_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@117f361f_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f6bd619_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a8c4335_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c04ba4c_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b5ca828_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dc537c5_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d1cbf61_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53e4c93_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@633a1fc7_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3333ecff_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ea5ec5_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ff0827_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35a4a88e_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d639e7_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63f60700_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c8d784_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@82ba826_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@215695c6_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52ffe70c_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@106e4d94_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9afb62d_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4047388d_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34b7f866_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6942e53e_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b6bdc69_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@128cba07_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fda5f52_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1af8d9c1_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6402105c_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73993722_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a67786f_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23248528_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1642283_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39106202_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50b419f5_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d5e064f_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48cc1251_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@220fcb4f_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c60430e_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67dde98c_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4866455f_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71131bc4_ARCHIVE_LOCATION">d:/FPGA/KUZNECHIK_TAKE2/KUZNECHIK_TAKE2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b48b210_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2085c13f_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e55a012_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@225e1906_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15fef15f_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67b382f0_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14e96531_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36096bb6_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4aa8cb62_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d108b40_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be48faa_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@431c9dfb_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25a3d997_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c7ee01d_ARCHIVE_LOCATION">d:/fpga/kuznechik_take2/kuznechik_take2.srcs</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b6c58b9d"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="73bbe026"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="b4ab55e3"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
