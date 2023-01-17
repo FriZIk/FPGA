@@ -1,0 +1,81 @@
+/*
+
+Vivado v2016.3 (64-bit)
+SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+Process ID: 8368
+
+Current time: 	11/25/21 4:35:03 PM MSK
+Time zone: 	Moscow Standard Time (Europe/Moscow)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.3/tps/win64/jre
+
+User name: 	student
+User home directory: C:/Users/student
+User working directory: C:/Users/student/Борис/Лекции/Творческий проект/раздача ребятам/basic_project
+User country: 	RU
+User language: 	ru
+User locale: 	ru_RU
+
+RDI base root directory: C:/Xilinx/Vivado
+RDI data directory: C:/Xilinx/Vivado/2016.3/data
+RDI bin directory: C:/Xilinx/Vivado/2016.3/bin
+
+Vivado preferences path: C:/Users/student/AppData/Roaming/Xilinx/Vivado/2016.3/vivado.ini
+Vivado layouts directory: C:/Users/student/AppData/Roaming/Xilinx/Vivado/2016.3/layouts
+
+GUI allocated memory:	202 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 461 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\student\Борис\Лекции\Творческий проект\раздача ребятам\basic_project\basic_project.xpr. Version: Vivado v2016.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/student/Борис/Лекции/Творческий проект/раздача ребятам/basic_project/basic_project.xpr} 
+// [GUI Memory]: 39 MB (+38208kb) [00:00:06]
+// [Engine Memory]: 426 MB (+295340kb) [00:00:06]
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 67 MB (+27650kb) [00:00:06]
+// [Engine Memory]: 454 MB (+6681kb) [00:00:07]
+// Tcl Message: open_project {C:/Users/student/Борис/Лекции/Творческий проект/раздача ребятам/basic_project/basic_project.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.3/data/ip'. 
+// Project name: basic_project; location: C:/Users/student/Борис/Лекции/Творческий проект/раздача ребятам/basic_project; part: xc7z010clg225-3
+// [Engine Memory]: 477 MB (+727kb) [00:00:09]
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 477 MB. GUI used memory: 34 MB. Current time: 11/25/21 4:35:04 PM MSK
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 14, true); // v:K (u:D, cd:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// y:aO (cd:JFrame): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, y:aO)
+// bt:g (cd:JFrame):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // y:aO (cd:JFrame)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z010clg225-3 Top: main 
+// [Engine Memory]: 503 MB (+1482kb) [00:00:15]

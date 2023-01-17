@@ -1,0 +1,23 @@
+# ----- REMOVE LINES ABOVE HERE -------------------------- #
+# This license is valid from the moment it was generated.
+#
+# This is license NODELOCKED to HOSTID=ANY
+# there is no need to run lmgrd for this license.
+#
+#
+# This license is valid for very long time... :-)
+INCREMENT Vivado_System_Edition xilinxd 2020.10 1-jan-2022 uncounted \
+	B1152C1D4824 HOSTID=ANY ISSUER="Proud Xilinx user" \
+	START=07-Jun-2013 TS_OK
+#
+#
+# ----------------------------------------------------
+# ----------------------------------------------------
+#
+PACKAGE Vivado_System_Edition xilinxd 2020.10 D4B06DC0EA9E \
+	COMPONENTS="Synthesis Implementation HLS Analyzer SDK \
+	Simulation SysGen" OPTIONS=SUITE
+#
+# ----------------------------------------------------
+#
+# ----- REMOVE LINES BELOW HERE --------------------------
